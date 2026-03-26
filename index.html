@@ -1,575 +1,938 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ペットメモリアル動画館</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&family=Rufina:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ペットメモリアル動画館</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link
-    href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@400;500;700&family=Rufina:wght@400;700&display=swap"
-    rel="stylesheet">
-    
-  <link rel="stylesheet" href="./petmemorial.css">
-</head>
+    <link rel="stylesheet" href="./petmemorial.css" />
+  </head>
 
-<body>
-  <main class="page">
+  <body>
+    <main class="page">
+      <section class="hero">
+        <div class="hero__bg"></div>
 
-    <section class="hero">
-      <div class="hero__bg"></div>
-
-      <div class="hero__visual">
-        <div class="hero__dots">
-          <img class="hero__dots-image" src="./hero/dots.png" alt="">
-          <div class="hero__oval-bloom" aria-hidden="true">
-            <img src="./hero/dots-line.svg" alt="">
-          </div>
-        </div>
-        <div class="hero__main-frame">
-          <img class="hero__main" src="./hero/paw-main.png" alt="ペットとの思い出">
-        </div>
-        <div class="hero__curve">
-          <img src="./hero/curve.png" alt="">
-        </div>
-        <div class="hero__thumb hero__thumb--01">
-          <div class="hero__thumb-inner hero__thumb-inner--01">
-            <img src="./hero/photo-01.png" alt="">
-          </div>
-        </div>
-        <div class="hero__thumb hero__thumb--02">
-          <div class="hero__thumb-inner hero__thumb-inner--02">
-            <img src="./hero/photo-02.png" alt="">
-          </div>
-        </div>
-        <div class="hero__thumb hero__thumb--03">
-          <div class="hero__thumb-inner hero__thumb-inner--03">
-            <img src="./hero/photo-03.png" alt="">
-          </div>
-        </div>
-      </div>
-
-      <div class="hero__inner container">
-        <div class="hero__brand">
-          <img src="./hero/label-bg.svg" alt="">
-          <p><span class="hero__brand-copy hero__brand-copy--sub">やさしく紡ぐ</span><span class="hero__brand-copy hero__brand-copy--main">デジタルメモリアルムービー</span></p>
-        </div>
-
-        <div class="hero__content">
-          <div class="hero__catch">
-            <span class="hero__catch-text">大切な</span>
-            <div class="hero__family">
-              <span class="hero__family-disc hero__family-disc--1" aria-hidden="true"></span>
-              <span class="hero__family-disc hero__family-disc--2" aria-hidden="true"></span>
-              <span class="hero__family-char hero__family-char--1">家</span>
-              <span class="hero__family-char hero__family-char--2">族</span>
+        <div class="hero__visual">
+          <div class="hero__dots">
+            <img class="hero__dots-image" src="./hero/dots.png" alt="" />
+            <div class="hero__oval-bloom" aria-hidden="true">
+              <img src="./hero/dots-line.svg" alt="" />
             </div>
-            <span class="hero__catch-text">との思い出を形に</span>
           </div>
-          <h1 class="hero__title">もう一度、<br>あの瞬間に会える</h1>
+          <div class="hero__main-frame">
+            <img
+              class="hero__main"
+              src="./hero/paw-main.png"
+              alt="ペットとの思い出"
+            />
+          </div>
+          <div class="hero__curve">
+            <img src="./hero/curve.png" alt="" />
+          </div>
+          <div class="hero__thumb hero__thumb--01">
+            <div class="hero__thumb-inner hero__thumb-inner--01">
+              <img src="./hero/photo-01.png" alt="" />
+            </div>
+          </div>
+          <div class="hero__thumb hero__thumb--02">
+            <div class="hero__thumb-inner hero__thumb-inner--02">
+              <img src="./hero/photo-02.png" alt="" />
+            </div>
+          </div>
+          <div class="hero__thumb hero__thumb--03">
+            <div class="hero__thumb-inner hero__thumb-inner--03">
+              <img src="./hero/photo-03.png" alt="" />
+            </div>
+          </div>
         </div>
 
-        <div class="hero__badges">
-          <div class="hero__badge">
-            <img src="./hero/badge-memory.svg" alt="">
-            <img class="hero__badge-bg camera-icon" src="./hero/camera-icon.png" alt="">
-            <p>お別れの<br>後も</p>
+        <div class="hero__inner container">
+          <div class="hero__brand">
+            <img src="./hero/label-bg.svg" alt="" />
+            <p>
+              <span class="hero__brand-copy hero__brand-copy--sub"
+                >やさしく紡ぐ</span
+              ><span class="hero__brand-copy hero__brand-copy--main"
+                >デジタルメモリアルムービー</span
+              >
+            </p>
           </div>
-          <div class="hero__badge">
-            <img src="./hero/badge-now.svg" alt="">
-            <img class="hero__badge-bg movie-icon" src="./hero/movie-icon.png" alt="">
-            <p>一緒にいる<br>今も</p>
-          </div>
-        </div>
 
-        <div class="hero__actions">
-          <div class="cta__group">
-            <div class="cta__benefits cta__benefits--image">
-              <div class="cta__benefit cta__benefit--image">
-                <picture>
-                  <source media="(max-width: 768px)" srcset="./hero/sp-cta__benefit1.png">
-                  <img src="./hero/cta__benefit1.png" alt="特典1 LINE登録で10%割引" class="cta__benefit-image">
-                </picture>
+          <div class="hero__content">
+            <div class="hero__catch">
+              <span class="hero__catch-text">大切な</span>
+              <div class="hero__family">
+                <span
+                  class="hero__family-disc hero__family-disc--1"
+                  aria-hidden="true"
+                ></span>
+                <span
+                  class="hero__family-disc hero__family-disc--2"
+                  aria-hidden="true"
+                ></span>
+                <span class="hero__family-char hero__family-char--1">家</span>
+                <span class="hero__family-char hero__family-char--2">族</span>
               </div>
-              <div class="cta__benefit cta__benefit--image">
-                <picture>
-                  <source media="(max-width: 768px)" srcset="./hero/sp-cta__benefit2.png">
-                  <img src="./hero/cta__benefit2.png" alt="特典2 モニター 先着10名様50%割引" class="cta__benefit-image">
-                </picture>
-              </div>
+              <span class="hero__catch-text">との思い出を形に</span>
             </div>
-            <p class="cta__note">＼ 簡単30秒 ／</p>
-            <a class="btn btn--primary" href="https://lin.ee/zTErQW4">
-              <span>LINE登録・お問い合わせはこちら</span>
-              <img class="btn__arrow" src="./cta/arrow-sparkle.png" alt="">
-            </a>
+            <h1 class="hero__title">もう一度、<br />あの瞬間に会える</h1>
           </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="intro-lead">
-      <div class="intro-lead__inner container">
-        <h2 class="intro-lead__title intro-lead__title--arch"><span class="intro-lead__arch-char intro-lead__arch-char--01">世</span><span
-            class="intro-lead__arch-char intro-lead__arch-char--02">界</span><span class="intro-lead__arch-char intro-lead__arch-char--03">に</span><span
-            class="intro-lead__arch-char intro-lead__arch-char--04">ひ</span><span class="intro-lead__arch-char intro-lead__arch-char--05">と</span><span
-            class="intro-lead__arch-char intro-lead__arch-char--06">つ</span><span class="intro-lead__arch-char intro-lead__arch-char--07">だ</span><span
-            class="intro-lead__arch-char intro-lead__arch-char--08">け</span><span class="intro-lead__arch-char intro-lead__arch-char--09">の</span><span
-            class="intro-lead__arch-char intro-lead__arch-char--10">メ</span><span class="intro-lead__arch-char intro-lead__arch-char--11">モ</span><span
-            class="intro-lead__arch-char intro-lead__arch-char--12">リ</span><span class="intro-lead__arch-char intro-lead__arch-char--13">ア</span><span
-            class="intro-lead__arch-char intro-lead__arch-char--14">ル</span><span class="intro-lead__arch-char intro-lead__arch-char--15">ム</span><span
-            class="intro-lead__arch-char intro-lead__arch-char--16">ー</span><span class="intro-lead__arch-char intro-lead__arch-char--17">ビ</span><span
-            class="intro-lead__arch-char intro-lead__arch-char--18">ー</span><span class="intro-lead__arch-char intro-lead__arch-char--19">を</span><span
-            class="intro-lead__arch-char intro-lead__arch-char--20">仕</span><span class="intro-lead__arch-char intro-lead__arch-char--21">上</span><span
-            class="intro-lead__arch-char intro-lead__arch-char--22">げ</span><span class="intro-lead__arch-char intro-lead__arch-char--23">ま</span><span
-            class="intro-lead__arch-char intro-lead__arch-char--24">す</span></h2>
-        <img class="intro-lead__arch-img" src="./intro-lead/sp-arch.png">
-        <div class="intro-lead__text">
-          <p>大切な家族との時間は、かけがえのない宝物。<br>たとえお別れが訪れても、その愛は消えることはありません。</p>
-          <p>私たちは、写真や動画の一つひとつに込められた想いを受け取り、<br>世界にひとつだけのメモリアルムービーとして丁寧に仕上げます。</p>
-          <p>思い出が静かに流れ、あの子の存在をそっと感じられる映像に。</p>
-          <p>これまでの「ありがとう」を、やさしい物語として残します。</p>
-        </div>
-      </div>
-
-      <div class="intro-lead__worries">
-        <div class="intro-lead__worries-bg">
-          <div class="intro-lead__worries-panel"></div>
-          <div class="intro-lead__worries-panel"></div>
-        </div>
-        <div class="intro-lead__worries-inner container">
-          <h2 class="intro-lead__worries-title">こんなお気持ちはありませんか？</h2>
-          <ul class="intro-lead__worries-list">
-            <li><img src="./intro-lead/paw.svg" alt="">写真はたくさんあるのに見返せていない</li>
-            <li><img src="./intro-lead/paw-alt.svg" alt="">ふとした瞬間に会いたくなる</li>
-            <li><img src="./intro-lead/paw-alt.svg" alt="">動いている姿をもう一度見たい</li>
-            <li><img src="./intro-lead/paw.svg" alt="">今一緒にいる時間もちゃんと残しておきたい</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <section class="service">
-      <div class="service__bg"></div>
-      <div class="service__overlay"></div>
-      <p class="service__label">SERVICE</p>
-      <div class="service__inner container">
-        <img class="service__deco" src="./intro-lead/paw.svg" alt="">
-
-        <div class="section-heading">
-          <h2 class="section-title">ペットメモリアル動画とは?</h2>
-          <p class="section-lead">お写真や動画をお預かりし、<br class="sp-br">5分間のオリジナルストーリー動画を制作します。</p>
-        </div>
-
-        <ul class="service__features">
-          <li class="service__feature">
-            <div class="service__feature-image"><img src="./service/circle-01.png" alt=""></div>
-            <p class="service__feature-label">写真約50枚前後</p>
-          </li>
-          <li class="service__feature">
-            <div class="service__feature-image"><img src="./service/circle-02.png" alt=""></div>
-            <p class="service__feature-label">動画素材も使用可能</p>
-          </li>
-          <li class="service__feature">
-            <div class="service__feature-image"><img src="./service/circle-03.png" alt=""></div>
-            <p class="service__feature-label">音楽付き編集</p>
-          </li>
-          <li class="service__feature">
-            <div class="service__feature-image"><img src="./service/circle-04.png" alt=""></div>
-            <p class="service__feature-label">メッセージ挿入も</p>
-          </li>
-        </ul>
-
-        <div class="service__detail">
-          <div class="service__detail-image">
-            <div class="service__detail-video">
-              <span class="service__detail-tag">動画イメージはこちら</span>
-              <iframe
-                class="service__detail-embed"
-                src="https://www.youtube.com/embed/5dhCx802BdE"
-                title="動画イメージ"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin"
-                loading="lazy"
-                allowfullscreen></iframe>
+          <div class="hero__badges">
+            <div class="hero__badge">
+              <img src="./hero/badge-memory.svg" alt="" />
+              <img
+                class="hero__badge-bg camera-icon"
+                src="./hero/camera-icon.png"
+                alt=""
+              />
+              <p>お別れの<br />後も</p>
+            </div>
+            <div class="hero__badge">
+              <img src="./hero/badge-now.svg" alt="" />
+              <img
+                class="hero__badge-bg movie-icon"
+                src="./hero/movie-icon.png"
+                alt=""
+              />
+              <p>一緒にいる<br />今も</p>
             </div>
           </div>
-          <div class="service__detail-body">
-            <p>完成した動画は、<br>デジタルフォトフレームに入れた現物の状態で<br class="sp-br">お届けします。</p>
-            <p>フレームの中で動画がやさしく動き出し、<br>届いたその日からすぐにご覧いただけます。</p>
-          </div>
-        </div>
-      </div>
-    </section>
 
-    <section class="reason">
-      <div class="reason__bg"></div>
-      <img class="reason__white-bg" src="./reason/white-bg.png" alt="" aria-hidden="true">
-      <img class="reason__paw reason__paw--01" src="./reason/paw-pattern.png" alt="" aria-hidden="true">
-      <img class="reason__paw reason__paw--02" src="./reason/paw-pattern2.png" alt="" aria-hidden="true">
-      <img class="reason__paw reason__paw--03" src="./reason/paw-pattern3.png" alt="" aria-hidden="true">
-
-      <div class="reason__inner container">
-        <div class="section-heading reason__heading">
-          <span class="reason__heading-sub">メモリアルムービーが</span>
-          <img class="reason__heading-highlight" src="./reason/highlight.png" alt="">
-          <h2 class="section-title">選ばれる理由</h2>
-        </div>
-
-        <div class="reason__list">
-          <article class="reason-card">
-            <img class="reason-card__paw-pattern" src="./reason/paw-pattern.png" alt="" aria-hidden="true">
-            <div class="reason-card__image">
-              <img class="reason-card__ring" src="./reason/circle-line.svg" alt="">
-              <img class="reason-card__photo" src="./reason/photo-01.png" alt="">
-            </div>
-            <div class="reason-card__body">
-              <div class="reason-card__title-row">
-                <img src="./reason/paw.svg" alt="">
-                <h3 class="reason-card__title">受け取ってすぐに、<br class="sp-br">大好きな家族が動き出す</h3>
-              </div>
-              <p class="reason-card__text">完成した動画は、デジタルフォトフレームに収めた現物でお届けします。フレームの中で、思い出の映像がやさしく動き出します。<br class="sp-br">
-              データ納品ではないため、難しい設定やインターネット接続は不要です。箱から出してコンセントを差すだけで、すぐに再生できます。<br class="sp-br">
-              機械操作が苦手な方でも安心してご覧いただけます。<br class="pc-br">ご自宅用はもちろん、ご家族への贈り物としてもそのままお渡しいただけます。</p>
-            </div>
-          </article>
-
-          <article class="reason-card reason-card--rev">
-            <img class="reason-card__paw-pattern" src="./reason/paw-pattern2.png" alt="" aria-hidden="true">
-            <div class="reason-card__image">
-              <img class="reason-card__ring" src="./reason/circle-line.svg" alt="">
-              <img class="reason-card__photo" src="./reason/photo-02.png" alt="">
-            </div>
-            <div class="reason-card__body">
-              <div class="reason-card__title-row">
-                <img src="./reason/paw.svg" alt="">
-                <h3 class="reason-card__title">あたたかく、やさしい編集</h3>
-              </div>
-              <p class="reason-card__text">派手な演出ではなく、思い出が自然に蘇るような構成で制作します。写真や動画一つひとつの表情やしぐさを丁寧に見つめ、<br class="pc-br"><br class="sp-br">無理に飾り立てることなく、その子らしさが伝わる流れを大切にしています。
-              音楽やテンポも落ち着いたものを選び、ご家族の気持ちにそっと寄り添う映像に仕上げます。<br class="pc-br"><br class="sp-br">やさしくあたたかな気持ちになれる作品を目指しています。</p>
-            </div>
-          </article>
-
-          <article class="reason-card">
-            <img class="reason-card__paw-pattern" src="./reason/paw-pattern3.png" alt="" aria-hidden="true">
-            <div class="reason-card__image">
-              <img class="reason-card__ring" src="./reason/circle-line.svg" alt="">
-              <img class="reason-card__photo" src="./reason/photo-03.png" alt="">
-            </div>
-            <div class="reason-card__body">
-              <div class="reason-card__title-row">
-                <img src="./reason/paw.svg" alt="">
-                <h3 class="reason-card__title">今一緒にいる子との<br class="sp-br">思い出作りにも</h3>
-              </div>
-              <p class="reason-card__text">メモリアルだけでなく、<br class="pc-br">誕生日・旅行・成長記録にもおすすめです。</p>
-              <p class="reason-card__text">何気ない日常も、振り返ればかけがえのない宝物。<br class="pc-br">大切な"今"を残しておくことで、未来の自分への贈り物になります。</p>
-            </div>
-          </article>
-        </div>
-        <div class="reason__actions">
+          <div class="hero__actions">
             <div class="cta__group">
               <div class="cta__benefits cta__benefits--image">
                 <div class="cta__benefit cta__benefit--image">
                   <picture>
-                    <source media="(max-width: 768px)" srcset="./reason/sp-cta__benefit1--green.png">
-                    <img src="./reason/cta__benefit1--green.png" alt="特典1 LINE登録で10%割引" class="cta__benefit-image">
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="./hero/sp-cta__benefit1.png"
+                    />
+                    <img
+                      src="./hero/cta__benefit1.png"
+                      alt="特典1 LINE登録で10%割引"
+                      class="cta__benefit-image"
+                    />
                   </picture>
                 </div>
                 <div class="cta__benefit cta__benefit--image">
                   <picture>
-                    <source media="(max-width: 768px)" srcset="./reason/sp-cta__benefit2--green.png">
-                    <img src="./reason/cta__benefit2--green.png" alt="特典2 モニター 先着10名様50%割引" class="cta__benefit-image">
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="./hero/sp-cta__benefit2.png"
+                    />
+                    <img
+                      src="./hero/cta__benefit2.png"
+                      alt="特典2 モニター 先着10名様50%割引"
+                      class="cta__benefit-image"
+                    />
                   </picture>
                 </div>
               </div>
               <p class="cta__note">＼ 簡単30秒 ／</p>
-              <a class="btn btn--primary" href="https://lin.ee/zTErQW4">
+              <a
+                class="btn btn--primary"
+                href="https://lin.ee/zTErQW4"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <span>LINE登録・お問い合わせはこちら</span>
-                <img class="btn__arrow" src="./cta/arrow-sparkle.png" alt="">
+                <img class="btn__arrow" src="./cta/arrow-sparkle.png" alt="" />
               </a>
             </div>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="flow">
-      <div class="flow__photo">
-        <img src="./flow/bg.png" alt="">
-      </div>
-      <div class="flow__photo-overlay"></div>
-
-      <p class="flow__label">FLOW</p>
-      <div class="flow__inner container">
-
-        <div class="section-heading">
-          <h2 class="section-title">メモリアル動画が届くまで</h2>
-          <img class="flow__deco" src="./flow/paw.svg" alt="">
+      <section class="intro-lead">
+        <div class="intro-lead__inner container">
+          <h2 class="intro-lead__title intro-lead__title--arch">
+            <span class="intro-lead__arch-char intro-lead__arch-char--01"
+              >世</span
+            ><span class="intro-lead__arch-char intro-lead__arch-char--02"
+              >界</span
+            ><span class="intro-lead__arch-char intro-lead__arch-char--03"
+              >に</span
+            ><span class="intro-lead__arch-char intro-lead__arch-char--04"
+              >ひ</span
+            ><span class="intro-lead__arch-char intro-lead__arch-char--05"
+              >と</span
+            ><span class="intro-lead__arch-char intro-lead__arch-char--06"
+              >つ</span
+            ><span class="intro-lead__arch-char intro-lead__arch-char--07"
+              >だ</span
+            ><span class="intro-lead__arch-char intro-lead__arch-char--08"
+              >け</span
+            ><span class="intro-lead__arch-char intro-lead__arch-char--09"
+              >の</span
+            ><span class="intro-lead__arch-char intro-lead__arch-char--10"
+              >メ</span
+            ><span class="intro-lead__arch-char intro-lead__arch-char--11"
+              >モ</span
+            ><span class="intro-lead__arch-char intro-lead__arch-char--12"
+              >リ</span
+            ><span class="intro-lead__arch-char intro-lead__arch-char--13"
+              >ア</span
+            ><span class="intro-lead__arch-char intro-lead__arch-char--14"
+              >ル</span
+            ><span class="intro-lead__arch-char intro-lead__arch-char--15"
+              >ム</span
+            ><span class="intro-lead__arch-char intro-lead__arch-char--16"
+              >ー</span
+            ><span class="intro-lead__arch-char intro-lead__arch-char--17"
+              >ビ</span
+            ><span class="intro-lead__arch-char intro-lead__arch-char--18"
+              >ー</span
+            ><span class="intro-lead__arch-char intro-lead__arch-char--19"
+              >を</span
+            ><span class="intro-lead__arch-char intro-lead__arch-char--20"
+              >仕</span
+            ><span class="intro-lead__arch-char intro-lead__arch-char--21"
+              >上</span
+            ><span class="intro-lead__arch-char intro-lead__arch-char--22"
+              >げ</span
+            ><span class="intro-lead__arch-char intro-lead__arch-char--23"
+              >ま</span
+            ><span class="intro-lead__arch-char intro-lead__arch-char--24"
+              >す</span
+            >
+          </h2>
+          <img class="intro-lead__arch-img" src="./intro-lead/sp-arch.png" />
+          <div class="intro-lead__text">
+            <p>
+              大切な家族との時間は、かけがえのない宝物。<br />たとえお別れが訪れても、その愛は消えることはありません。
+            </p>
+            <p>
+              私たちは、写真や動画の一つひとつに込められた想いを受け取り、<br />世界にひとつだけのメモリアルムービーとして丁寧に仕上げます。
+            </p>
+            <p>思い出が静かに流れ、あの子の存在をそっと感じられる映像に。</p>
+            <p>これまでの「ありがとう」を、やさしい物語として残します。</p>
+          </div>
         </div>
 
-        <div class="flow__content">
-          <div class="flow__line"></div>
-          <div class="flow__steps">
-            <article class="flow-step">
-              <div class="flow-step__number">STEP<br>1</div>
-              <div class="flow-step__body">
-                <h3 class="flow-step__title">お申し込み</h3>
-                <p class="flow-step__text">公式LINEよりお申し込みください。<br>ご希望内容を確認後、制作の流れやデータ送付方法をご案内いたします。</p>
+        <div class="intro-lead__worries">
+          <div class="intro-lead__worries-bg">
+            <div class="intro-lead__worries-panel"></div>
+            <div class="intro-lead__worries-panel"></div>
+          </div>
+          <div class="intro-lead__worries-inner container">
+            <h2 class="intro-lead__worries-title">
+              こんなお気持ちはありませんか？
+            </h2>
+            <ul class="intro-lead__worries-list">
+              <li>
+                <img
+                  src="./intro-lead/paw.svg"
+                  alt=""
+                />写真はたくさんあるのに見返せていない
+              </li>
+              <li>
+                <img
+                  src="./intro-lead/paw-alt.svg"
+                  alt=""
+                />ふとした瞬間に会いたくなる
+              </li>
+              <li>
+                <img
+                  src="./intro-lead/paw-alt.svg"
+                  alt=""
+                />動いている姿をもう一度見たい
+              </li>
+              <li>
+                <img
+                  src="./intro-lead/paw.svg"
+                  alt=""
+                />今一緒にいる時間もちゃんと残しておきたい
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="service">
+        <div class="service__bg"></div>
+        <div class="service__overlay"></div>
+        <p class="service__label">SERVICE</p>
+        <div class="service__inner container">
+          <img class="service__deco" src="./intro-lead/paw.svg" alt="" />
+
+          <div class="section-heading">
+            <h2 class="section-title">ペットメモリアル動画とは?</h2>
+            <p class="section-lead">
+              お写真や動画をお預かりし、<br
+                class="sp-br"
+              />5分間のオリジナルストーリー動画を制作します。
+            </p>
+          </div>
+
+          <ul class="service__features">
+            <li class="service__feature">
+              <div class="service__feature-image">
+                <img src="./service/circle-01.png" alt="" />
+              </div>
+              <p class="service__feature-label">写真約50枚前後</p>
+            </li>
+            <li class="service__feature">
+              <div class="service__feature-image">
+                <img src="./service/circle-02.png" alt="" />
+              </div>
+              <p class="service__feature-label">動画素材も使用可能</p>
+            </li>
+            <li class="service__feature">
+              <div class="service__feature-image">
+                <img src="./service/circle-03.png" alt="" />
+              </div>
+              <p class="service__feature-label">音楽付き編集</p>
+            </li>
+            <li class="service__feature">
+              <div class="service__feature-image">
+                <img src="./service/circle-04.png" alt="" />
+              </div>
+              <p class="service__feature-label">メッセージ挿入も</p>
+            </li>
+          </ul>
+
+          <div class="service__detail">
+            <div class="service__detail-image">
+              <div class="service__detail-video">
+                <span class="service__detail-tag">動画イメージはこちら</span>
+                <iframe
+                  class="service__detail-embed"
+                  src="https://www.youtube.com/embed/5dhCx802BdE"
+                  title="動画イメージ"
+                  allow="
+                    accelerometer;
+                    autoplay;
+                    clipboard-write;
+                    encrypted-media;
+                    gyroscope;
+                    picture-in-picture;
+                    web-share;
+                  "
+                  referrerpolicy="strict-origin-when-cross-origin"
+                  loading="lazy"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="service__detail-body">
+              <p>
+                完成した動画は、<br />デジタルフォトフレームに入れた現物の状態で<br
+                  class="sp-br"
+                />お届けします。
+              </p>
+              <p>
+                フレームの中で動画がやさしく動き出し、<br />届いたその日からすぐにご覧いただけます。
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reason">
+        <div class="reason__bg"></div>
+        <img
+          class="reason__white-bg"
+          src="./reason/white-bg.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          class="reason__paw reason__paw--01"
+          src="./reason/paw-pattern.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          class="reason__paw reason__paw--02"
+          src="./reason/paw-pattern2.png"
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          class="reason__paw reason__paw--03"
+          src="./reason/paw-pattern3.png"
+          alt=""
+          aria-hidden="true"
+        />
+
+        <div class="reason__inner container">
+          <div class="section-heading reason__heading">
+            <span class="reason__heading-sub">メモリアルムービーが</span>
+            <img
+              class="reason__heading-highlight"
+              src="./reason/highlight.png"
+              alt=""
+            />
+            <h2 class="section-title">選ばれる理由</h2>
+          </div>
+
+          <div class="reason__list">
+            <article class="reason-card">
+              <img
+                class="reason-card__paw-pattern"
+                src="./reason/paw-pattern.png"
+                alt=""
+                aria-hidden="true"
+              />
+              <div class="reason-card__image">
+                <img
+                  class="reason-card__ring"
+                  src="./reason/circle-line.svg"
+                  alt=""
+                />
+                <img
+                  class="reason-card__photo"
+                  src="./reason/photo-01.png"
+                  alt=""
+                />
+              </div>
+              <div class="reason-card__body">
+                <div class="reason-card__title-row">
+                  <img src="./reason/paw.svg" alt="" />
+                  <h3 class="reason-card__title">
+                    受け取ってすぐに、<br class="sp-br" />大好きな家族が動き出す
+                  </h3>
+                </div>
+                <p class="reason-card__text">
+                  完成した動画は、デジタルフォトフレームに収めた現物でお届けします。フレームの中で、思い出の映像がやさしく動き出します。<br
+                    class="sp-br"
+                  />
+                  データ納品ではないため、難しい設定やインターネット接続は不要です。箱から出してコンセントを差すだけで、すぐに再生できます。<br
+                    class="sp-br"
+                  />
+                  機械操作が苦手な方でも安心してご覧いただけます。<br
+                    class="pc-br"
+                  />ご自宅用はもちろん、ご家族への贈り物としてもそのままお渡しいただけます。
+                </p>
               </div>
             </article>
-            <article class="flow-step">
-              <div class="flow-step__number">STEP<br>2</div>
-              <div class="flow-step__body">
-                <h3 class="flow-step__title">ヒアリング</h3>
-                <p class="flow-step__text">その子との思い出や伝えたいお気持ちをお聞かせください。<br>印象的な出来事や性格なども、映像構成に大切に反映いたします。</p>
+
+            <article class="reason-card reason-card--rev">
+              <img
+                class="reason-card__paw-pattern"
+                src="./reason/paw-pattern2.png"
+                alt=""
+                aria-hidden="true"
+              />
+              <div class="reason-card__image">
+                <img
+                  class="reason-card__ring"
+                  src="./reason/circle-line.svg"
+                  alt=""
+                />
+                <img
+                  class="reason-card__photo"
+                  src="./reason/photo-02.png"
+                  alt=""
+                />
+              </div>
+              <div class="reason-card__body">
+                <div class="reason-card__title-row">
+                  <img src="./reason/paw.svg" alt="" />
+                  <h3 class="reason-card__title">あたたかく、やさしい編集</h3>
+                </div>
+                <p class="reason-card__text">
+                  派手な演出ではなく、思い出が自然に蘇るような構成で制作します。写真や動画一つひとつの表情やしぐさを丁寧に見つめ、<br
+                    class="pc-br"
+                  /><br
+                    class="sp-br"
+                  />無理に飾り立てることなく、その子らしさが伝わる流れを大切にしています。
+                  音楽やテンポも落ち着いたものを選び、ご家族の気持ちにそっと寄り添う映像に仕上げます。<br
+                    class="pc-br"
+                  /><br
+                    class="sp-br"
+                  />やさしくあたたかな気持ちになれる作品を目指しています。
+                </p>
               </div>
             </article>
-            <article class="flow-step">
-              <div class="flow-step__number">STEP<br>3</div>
-              <div class="flow-step__body">
-                <h3 class="flow-step__title">お写真・動画データ送付</h3>
-                <p class="flow-step__text">思い出のお写真や動画データをお送りいただきます。<br>目安として5分の動画で約50枚ほどのお写真をご用意いただいております。</p>
+
+            <article class="reason-card">
+              <img
+                class="reason-card__paw-pattern"
+                src="./reason/paw-pattern3.png"
+                alt=""
+                aria-hidden="true"
+              />
+              <div class="reason-card__image">
+                <img
+                  class="reason-card__ring"
+                  src="./reason/circle-line.svg"
+                  alt=""
+                />
+                <img
+                  class="reason-card__photo"
+                  src="./reason/photo-03.png"
+                  alt=""
+                />
+              </div>
+              <div class="reason-card__body">
+                <div class="reason-card__title-row">
+                  <img src="./reason/paw.svg" alt="" />
+                  <h3 class="reason-card__title">
+                    今一緒にいる子との<br class="sp-br" />思い出作りにも
+                  </h3>
+                </div>
+                <p class="reason-card__text">
+                  メモリアルだけでなく、<br
+                    class="pc-br"
+                  />誕生日・旅行・成長記録にもおすすめです。
+                </p>
+                <p class="reason-card__text">
+                  何気ない日常も、振り返ればかけがえのない宝物。<br
+                    class="pc-br"
+                  />大切な"今"を残しておくことで、未来の自分への贈り物になります。
+                </p>
               </div>
             </article>
-            <article class="flow-step">
-              <div class="flow-step__number">STEP<br>4</div>
-              <div class="flow-step__body">
-                <h3 class="flow-step__title">納品</h3>
-                <p class="flow-step__text">お預かりした素材とヒアリング内容をもとに、丁寧に編集いたします。<br>派手な演出ではなく、その子らしさが伝わるやさしい映像に仕上げます。</p>
+          </div>
+          <div class="reason__actions">
+            <div class="cta__group">
+              <div class="cta__benefits cta__benefits--image">
+                <div class="cta__benefit cta__benefit--image">
+                  <picture>
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="./reason/sp-cta__benefit1--green.png"
+                    />
+                    <img
+                      src="./reason/cta__benefit1--green.png"
+                      alt="特典1 LINE登録で10%割引"
+                      class="cta__benefit-image"
+                    />
+                  </picture>
+                </div>
+                <div class="cta__benefit cta__benefit--image">
+                  <picture>
+                    <source
+                      media="(max-width: 768px)"
+                      srcset="./reason/sp-cta__benefit2--green.png"
+                    />
+                    <img
+                      src="./reason/cta__benefit2--green.png"
+                      alt="特典2 モニター 先着10名様50%割引"
+                      class="cta__benefit-image"
+                    />
+                  </picture>
+                </div>
+              </div>
+              <p class="cta__note">＼ 簡単30秒 ／</p>
+              <a
+                class="btn btn--primary"
+                href="https://lin.ee/zTErQW4"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <span>LINE登録・お問い合わせはこちら</span>
+                <img class="btn__arrow" src="./cta/arrow-sparkle.png" alt="" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="flow">
+        <div class="flow__photo">
+          <img src="./flow/bg.png" alt="" />
+        </div>
+        <div class="flow__photo-overlay"></div>
+
+        <p class="flow__label">FLOW</p>
+        <div class="flow__inner container">
+          <div class="section-heading">
+            <h2 class="section-title">メモリアル動画が届くまで</h2>
+            <img class="flow__deco" src="./flow/paw.svg" alt="" />
+          </div>
+
+          <div class="flow__content">
+            <div class="flow__line"></div>
+            <div class="flow__steps">
+              <article class="flow-step">
+                <div class="flow-step__number">STEP<br />1</div>
+                <div class="flow-step__body">
+                  <h3 class="flow-step__title">お申し込み</h3>
+                  <p class="flow-step__text">
+                    公式LINEよりお申し込みください。<br />ご希望内容を確認後、制作の流れやデータ送付方法をご案内いたします。
+                  </p>
+                </div>
+              </article>
+              <article class="flow-step">
+                <div class="flow-step__number">STEP<br />2</div>
+                <div class="flow-step__body">
+                  <h3 class="flow-step__title">ヒアリング</h3>
+                  <p class="flow-step__text">
+                    その子との思い出や伝えたいお気持ちをお聞かせください。<br />印象的な出来事や性格なども、映像構成に大切に反映いたします。
+                  </p>
+                </div>
+              </article>
+              <article class="flow-step">
+                <div class="flow-step__number">STEP<br />3</div>
+                <div class="flow-step__body">
+                  <h3 class="flow-step__title">お写真・動画データ送付</h3>
+                  <p class="flow-step__text">
+                    思い出のお写真や動画データをお送りいただきます。<br />目安として5分の動画で約50枚ほどのお写真をご用意いただいております。
+                  </p>
+                </div>
+              </article>
+              <article class="flow-step">
+                <div class="flow-step__number">STEP<br />4</div>
+                <div class="flow-step__body">
+                  <h3 class="flow-step__title">納品</h3>
+                  <p class="flow-step__text">
+                    お預かりした素材とヒアリング内容をもとに、丁寧に編集いたします。<br />派手な演出ではなく、その子らしさが伝わるやさしい映像に仕上げます。
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="voice">
+        <div class="voice__bg"></div>
+        <p class="voice__label">VOICE</p>
+        <div class="voice__inner container">
+          <div class="section-heading">
+            <img class="voice__deco" src="./voice/paw.svg" alt="" />
+            <h2 class="section-title">お客様の声</h2>
+          </div>
+
+          <div class="voice__list">
+            <article class="voice-card">
+              <div class="voice-card__image">
+                <img src="./voice/photo-01.png" alt="" />
+              </div>
+              <div class="voice-card__body voice-card__body--offset">
+                <h3 class="voice-card__title">
+                  大切な時間が、<br class="sp-br" />やさしくよみがえりました
+                </h3>
+                <p class="voice-card__text">
+                  正直、最初は動画にすることを少し迷っていました。<br />
+                  思い出を見るのがつらくなってしまうのではないかと不安もあったからです。でも、届いた映像は想像以上にやさしくて、あの子らしい表情や仕草が自然な流れで映し出されていて、涙と一緒にあたたかい気持ちが込み上げてきました。今では、ふと会いたくなったときに再生しています。<br
+                    class="pc-br"
+                  />
+                  悲しみだけでなく、「一緒に過ごせて幸せだった」と思える時間を<br
+                    class="pc-br"
+                  />
+                  いただけたことに心から感謝しています。
+                </p>
+                <span class="voice-card__meta">（50代・女性）</span>
+              </div>
+            </article>
+
+            <article class="voice-card voice-card--rev">
+              <div class="voice-card__image">
+                <img src="./voice/photo-02.png" alt="" />
+              </div>
+              <div class="voice-card__body">
+                <h3 class="voice-card__title">写真の中で、また会えました</h3>
+                <p class="voice-card__text">
+                  突然のお別れで、気持ちの整理がつかないまま日々を過ごしていました。<br />
+                  写真はたくさん残っているのに、なかなか見ることができずにいて…。<br />
+                  そんなときにお願いしたメモリアル動画。<br class="pc-br" />
+                  やさしい音楽とともに流れるあの子の姿に、「ここにちゃんと生きていたんだ」と改めて感じることができました。悲しいだけではなく、一緒に過ごした時間の尊さを思い出させてくれる映像です。<br />
+                  今はリビングに飾り、家族みんなで大切にしています。
+                </p>
+                <span class="voice-card__meta">（60代・女性）</span>
+              </div>
+            </article>
+
+            <article class="voice-card">
+              <div class="voice-card__image">
+                <img src="./voice/photo-03.png" alt="" />
+              </div>
+              <div class="voice-card__body voice-card__body--offset">
+                <h3 class="voice-card__title">
+                  "今"を残しておいて本当によかった
+                </h3>
+                <p class="voice-card__text">
+                  まだ元気にそばにいてくれていますが、誕生日の記念に動画をお願いしました。何気ない日常の写真ばかりでしたが、<br />編集していただくと一つの物語のようになり、改めてかけがえのない存在だと感じました。<br
+                    class="sp-br"
+                  />将来のためというより、<br
+                    class="pc-br"
+                  />"今この時間を大切にしたい"という気持ちでお願いしましたが、<br
+                    class="pc-br"
+                  />きっと何年後も宝物になると思います。<br />毎年1本ずつお願いしたいね、と家族で話しています。
+                </p>
+                <span class="voice-card__meta">（40代・女性）</span>
               </div>
             </article>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="voice">
-      <div class="voice__bg"></div>
-      <p class="voice__label">VOICE</p>
-      <div class="voice__inner container">
-
-        <div class="section-heading">
-          <img class="voice__deco" src="./voice/paw.svg" alt="">
-          <h2 class="section-title">お客様の声</h2>
-        </div>
-
-        <div class="voice__list">
-          <article class="voice-card">
-            <div class="voice-card__image">
-              <img src="./voice/photo-01.png" alt="">
-            </div>
-            <div class="voice-card__body voice-card__body--offset">
-              <h3 class="voice-card__title">大切な時間が、<br class="sp-br">やさしくよみがえりました</h3>
-              <p class="voice-card__text">
-                正直、最初は動画にすることを少し迷っていました。<br>
-                思い出を見るのがつらくなってしまうのではないかと不安もあったからです。でも、届いた映像は想像以上にやさしくて、あの子らしい表情や仕草が自然な流れで映し出されていて、涙と一緒にあたたかい気持ちが込み上げてきました。今では、ふと会いたくなったときに再生しています。<br class="pc-br">
-                悲しみだけでなく、「一緒に過ごせて幸せだった」と思える時間を<br class="pc-br">
-                いただけたことに心から感謝しています。
-              </p>
-              <span class="voice-card__meta">（50代・女性）</span>
-            </div>
-          </article>
-
-          <article class="voice-card voice-card--rev">
-            <div class="voice-card__image">
-              <img src="./voice/photo-02.png" alt="">
-            </div>
-            <div class="voice-card__body">
-              <h3 class="voice-card__title">写真の中で、また会えました</h3>
-              <p class="voice-card__text">
-                突然のお別れで、気持ちの整理がつかないまま日々を過ごしていました。<br>
-                写真はたくさん残っているのに、なかなか見ることができずにいて…。<br>
-                そんなときにお願いしたメモリアル動画。<br class="pc-br">
-                やさしい音楽とともに流れるあの子の姿に、「ここにちゃんと生きていたんだ」と改めて感じることができました。悲しいだけではなく、一緒に過ごした時間の尊さを思い出させてくれる映像です。<br>
-                今はリビングに飾り、家族みんなで大切にしています。
-              </p>
-              <span class="voice-card__meta">（60代・女性）</span>
-            </div>
-          </article>
-
-          <article class="voice-card">
-            <div class="voice-card__image">
-              <img src="./voice/photo-03.png" alt="">
-            </div>
-            <div class="voice-card__body voice-card__body--offset">
-              <h3 class="voice-card__title">"今"を残しておいて本当によかった</h3>
-              <p class="voice-card__text">
-                まだ元気にそばにいてくれていますが、誕生日の記念に動画をお願いしました。何気ない日常の写真ばかりでしたが、<br>編集していただくと一つの物語のようになり、改めてかけがえのない存在だと感じました。<br class="sp-br">将来のためというより、<br class="pc-br">"今この時間を大切にしたい"という気持ちでお願いしましたが、<br class="pc-br">きっと何年後も宝物になると思います。<br>毎年1本ずつお願いしたいね、と家族で話しています。</p>
-              <span class="voice-card__meta">（40代・女性）</span>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="faq">
-      <div class="faq__bg"></div>
-      <p class="faq__label">Q&amp;A</p>
-      <div class="faq__inner container">
-
-        <div class="section-heading">
-          <img class="faq__deco" src="./faq/paw.svg" alt="">
-          <h2 class="section-title">よくある質問</h2>
-        </div>
-
-        <div class="faq__list">
-          <article class="faq-item">
-            <img class="faq-item__icon" src="./faq/paw.svg" alt="">
-            <button class="faq-item__question" type="button" aria-expanded="true" aria-controls="faq-answer-1"
-              id="faq-question-1">
-              <span class="faq-item__q" aria-hidden="true">Q</span>
-              <span class="faq-item__question-text">写真は何枚くらい必要ですか？</span>
-            </button>
-            <div class="faq-item__answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1">
-              <span class="faq-item__a" aria-hidden="true">A</span>
-              <div class="faq-item__answer-text">
-                <p>
-                  5分の動画の場合、目安として約50枚ほどのお写真をご用意いただいております。<br>動画データを組み合わせることも可能ですので、お手持ちの素材に合わせてご相談ください。<br>枚数が足りない場合も構成をご提案いたしますのでご安心ください。
-                </p>
-              </div>
-            </div>
-          </article>
-          <article class="faq-item">
-            <img class="faq-item__icon" src="./faq/paw.svg" alt="">
-            <button class="faq-item__question" type="button" aria-expanded="true" aria-controls="faq-answer-2"
-              id="faq-question-2">
-              <span class="faq-item__q" aria-hidden="true">Q</span>
-              <span class="faq-item__question-text">パソコンや機械が苦手でも大丈夫ですか？</span>
-            </button>
-            <div class="faq-item__answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2">
-              <span class="faq-item__a" aria-hidden="true">A</span>
-              <div class="faq-item__answer-text">
-                <p>
-                  もちろん大丈夫です。完成した動画はデジタルフォトフレームに入れた状態でお届けいたしますので、<br>届いたその日からすぐにご覧いただけます。<br>複雑な設定は不要で、操作方法のご案内も同封しております。
-                </p>
-              </div>
-            </div>
-          </article>
-          <article class="faq-item">
-            <img class="faq-item__icon" src="./faq/paw.svg" alt="">
-            <button class="faq-item__question" type="button" aria-expanded="true" aria-controls="faq-answer-3"
-              id="faq-question-3">
-              <span class="faq-item__q" aria-hidden="true">Q</span>
-              <span class="faq-item__question-text">どのくらいの期間で届きますか？</span>
-            </button>
-            <div class="faq-item__answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3">
-              <span class="faq-item__a" aria-hidden="true">A</span>
-              <div class="faq-item__answer-text">
-                <p>お写真・ヒアリング内容をすべてお預かりしてから、<br>通常2〜3週間ほどでお届けしております。<br>お急ぎの場合は可能な範囲で対応いたしますので、事前にご相談ください。</p>
-              </div>
-            </div>
-          </article>
-          <article class="faq-item">
-            <img class="faq-item__icon" src="./faq/paw.svg" alt="">
-            <button class="faq-item__question" type="button" aria-expanded="true" aria-controls="faq-answer-4"
-              id="faq-question-4">
-              <span class="faq-item__q" aria-hidden="true">Q</span>
-              <span class="faq-item__question-text">メモリアル以外でもお願いできますか？</span>
-            </button>
-            <div class="faq-item__answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4">
-              <span class="faq-item__a" aria-hidden="true">A</span>
-              <div class="faq-item__answer-text">
-                <p>はい、もちろん可能です。お誕生日や旅行の思い出、成長記録など、<br>"今一緒にいる時間"を残す目的でもご依頼いただいています。<br>毎年1本ずつ制作される方もいらっしゃいます。</p>
-              </div>
-            </div>
-          </article>
-          <article class="faq-item">
-            <img class="faq-item__icon" src="./faq/paw.svg" alt="">
-            <button class="faq-item__question" type="button" aria-expanded="true" aria-controls="faq-answer-5"
-              id="faq-question-5">
-              <span class="faq-item__q" aria-hidden="true">Q</span>
-              <span class="faq-item__question-text">デジタルフォトフレームではなく、携帯で見られる動画もお願いできますか？</span>
-            </button>
-            <div class="faq-item__answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5">
-              <span class="faq-item__a" aria-hidden="true">A</span>
-              <div class="faq-item__answer-text">
-                <p>
-                  はい、もちろん可能です。<br>フレーム不要の場合は、通常料金30,000円より3,000円お値引きした、27,000円でご案内させて<br>いただきます。外出先でもいつでもご自身の携帯から動画をご覧いただくことができます。
-                </p>
-              </div>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="price">
-      <div class="price__bg"></div>
-      <p class="price__label">PRICE</p>
-      <div class="price__inner container">
-
-        <div class="section-heading">
-          <img class="price__deco" src="./price/paw.svg" alt="">
-          <h2 class="section-title">料金について</h2>
-        </div>
-
-        <div class="price__cards">
-          <article class="price-card">
-            <h3 class="price-card__title">メモリアルムービー制作<br class="pc-br">（5分）</h3>
-            <p class="price-card__amount">¥30,000-<span>(税込)</span></p>
-            <div class="price-card__detail">
-              <p>・写真約50枚前後<br>（目安：1分あたり約8枚）<br>・ヒアリング込み<br>・やさしいオリジナル編集<br>・デジタルフォトフレーム付き<br>・修正1回まで無料</p>
-            </div>
-          </article>
-          <article class="price-card">
-            <h3 class="price-card__title">動画延長<br class="pc-br">（＋1分）</h3>
-            <p class="price-card__amount">¥5,000-<span>(税込)</span></p>
-            <div class="price-card__detail">
-              <p>写真枚数の追加や、<br>エピソードをより丁寧に残したい方に<br>おすすめです。</p>
-            </div>
-          </article>
-          <article class="price-card">
-            <h3 class="price-card__title">フォトフレーム</h3>
-            <p class="price-card__amount">無料</p>
-            <div class="price-card__detail">
-              <p>標準フレームは料金に含まれております。<br>・フレーム不要の場合：−¥3,000<br>・上位グレードへ変更：＋¥3,000〜<br>・装飾オプション（予定）：別途ご案内</p>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta">
-      <div class="cta__inner container">
-        <div class="cta__group">
-          <div class="cta__benefits cta__benefits--image">
-            <div class="cta__benefit cta__benefit--image">
-              <picture>
-                <source media="(max-width: 768px)" srcset="./reason/sp-cta__benefit1--green.png">
-                <img src="./reason/cta__benefit1--green.png" alt="特典1 LINE登録で10%割引" class="cta__benefit-image">
-              </picture>
-            </div>
-            <div class="cta__benefit cta__benefit--image">
-              <picture>
-                <source media="(max-width: 768px)" srcset="./reason/sp-cta__benefit2--green.png">
-                <img src="./reason/cta__benefit2--green.png" alt="特典2 モニター 先着10名様50%割引" class="cta__benefit-image">
-              </picture>
-            </div>
+      <section class="faq">
+        <div class="faq__bg"></div>
+        <p class="faq__label">Q&amp;A</p>
+        <div class="faq__inner container">
+          <div class="section-heading">
+            <img class="faq__deco" src="./faq/paw.svg" alt="" />
+            <h2 class="section-title">よくある質問</h2>
           </div>
-          <p class="cta__note">\　簡単30秒　/</p>
-          <a class="btn btn--primary" href="https://lin.ee/zTErQW4">
-            <span>LINE登録・お問い合わせはこちら</span>
-            <img class="btn__arrow" src="./cta/arrow-sparkle.png" alt="">
-          </a>
+
+          <div class="faq__list">
+            <article class="faq-item">
+              <img class="faq-item__icon" src="./faq/paw.svg" alt="" />
+              <button
+                class="faq-item__question"
+                type="button"
+                aria-expanded="true"
+                aria-controls="faq-answer-1"
+                id="faq-question-1"
+              >
+                <span class="faq-item__q" aria-hidden="true">Q</span>
+                <span class="faq-item__question-text"
+                  >写真は何枚くらい必要ですか？</span
+                >
+              </button>
+              <div
+                class="faq-item__answer"
+                id="faq-answer-1"
+                role="region"
+                aria-labelledby="faq-question-1"
+              >
+                <span class="faq-item__a" aria-hidden="true">A</span>
+                <div class="faq-item__answer-text">
+                  <p>
+                    5分の動画の場合、目安として約50枚ほどのお写真をご用意いただいております。<br />動画データを組み合わせることも可能ですので、お手持ちの素材に合わせてご相談ください。<br />枚数が足りない場合も構成をご提案いたしますのでご安心ください。
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="faq-item">
+              <img class="faq-item__icon" src="./faq/paw.svg" alt="" />
+              <button
+                class="faq-item__question"
+                type="button"
+                aria-expanded="true"
+                aria-controls="faq-answer-2"
+                id="faq-question-2"
+              >
+                <span class="faq-item__q" aria-hidden="true">Q</span>
+                <span class="faq-item__question-text"
+                  >パソコンや機械が苦手でも大丈夫ですか？</span
+                >
+              </button>
+              <div
+                class="faq-item__answer"
+                id="faq-answer-2"
+                role="region"
+                aria-labelledby="faq-question-2"
+              >
+                <span class="faq-item__a" aria-hidden="true">A</span>
+                <div class="faq-item__answer-text">
+                  <p>
+                    もちろん大丈夫です。完成した動画はデジタルフォトフレームに入れた状態でお届けいたしますので、<br />届いたその日からすぐにご覧いただけます。<br />複雑な設定は不要で、操作方法のご案内も同封しております。
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="faq-item">
+              <img class="faq-item__icon" src="./faq/paw.svg" alt="" />
+              <button
+                class="faq-item__question"
+                type="button"
+                aria-expanded="true"
+                aria-controls="faq-answer-3"
+                id="faq-question-3"
+              >
+                <span class="faq-item__q" aria-hidden="true">Q</span>
+                <span class="faq-item__question-text"
+                  >どのくらいの期間で届きますか？</span
+                >
+              </button>
+              <div
+                class="faq-item__answer"
+                id="faq-answer-3"
+                role="region"
+                aria-labelledby="faq-question-3"
+              >
+                <span class="faq-item__a" aria-hidden="true">A</span>
+                <div class="faq-item__answer-text">
+                  <p>
+                    お写真・ヒアリング内容をすべてお預かりしてから、<br />通常2〜3週間ほどでお届けしております。<br />お急ぎの場合は可能な範囲で対応いたしますので、事前にご相談ください。
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="faq-item">
+              <img class="faq-item__icon" src="./faq/paw.svg" alt="" />
+              <button
+                class="faq-item__question"
+                type="button"
+                aria-expanded="true"
+                aria-controls="faq-answer-4"
+                id="faq-question-4"
+              >
+                <span class="faq-item__q" aria-hidden="true">Q</span>
+                <span class="faq-item__question-text"
+                  >メモリアル以外でもお願いできますか？</span
+                >
+              </button>
+              <div
+                class="faq-item__answer"
+                id="faq-answer-4"
+                role="region"
+                aria-labelledby="faq-question-4"
+              >
+                <span class="faq-item__a" aria-hidden="true">A</span>
+                <div class="faq-item__answer-text">
+                  <p>
+                    はい、もちろん可能です。お誕生日や旅行の思い出、成長記録など、<br />"今一緒にいる時間"を残す目的でもご依頼いただいています。<br />毎年1本ずつ制作される方もいらっしゃいます。
+                  </p>
+                </div>
+              </div>
+            </article>
+            <article class="faq-item">
+              <img class="faq-item__icon" src="./faq/paw.svg" alt="" />
+              <button
+                class="faq-item__question"
+                type="button"
+                aria-expanded="true"
+                aria-controls="faq-answer-5"
+                id="faq-question-5"
+              >
+                <span class="faq-item__q" aria-hidden="true">Q</span>
+                <span class="faq-item__question-text"
+                  >デジタルフォトフレームではなく、携帯で見られる動画もお願いできますか？</span
+                >
+              </button>
+              <div
+                class="faq-item__answer"
+                id="faq-answer-5"
+                role="region"
+                aria-labelledby="faq-question-5"
+              >
+                <span class="faq-item__a" aria-hidden="true">A</span>
+                <div class="faq-item__answer-text">
+                  <p>
+                    はい、もちろん可能です。<br />フレーム不要の場合は、通常料金30,000円より3,000円お値引きした、27,000円でご案内させて<br />いただきます。外出先でもいつでもご自身の携帯から動画をご覧いただくことができます。
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section class="footer-message">
-      <div class="footer-message__bg">
-        <img src="./footer-message/bg.png" alt="">
-      </div>
-      <div class="footer-message__inner container">
-        <div class="footer-message__body">
-          <h2 class="footer-message__title">想いは、時間とともに<br>静かに、深く、心に残る。</h2>
-          <p class="footer-message__text">思い出は、心の中だけでなく、<br>そっと目に見えるかたちにも残せます。</p>
-          <p class="footer-message__text">あなたの大切な時間が、<br>これからもあたたかく続いていきますように。</p>
-          <p class="footer-message__text footer-message__emphasis">デジタルフォトフレームで、<br>一生の思い出を残しませんか？</p>
+      <section class="price">
+        <div class="price__bg"></div>
+        <p class="price__label">PRICE</p>
+        <div class="price__inner container">
+          <div class="section-heading">
+            <img class="price__deco" src="./price/paw.svg" alt="" />
+            <h2 class="section-title">料金について</h2>
+          </div>
+
+          <div class="price__cards">
+            <article class="price-card">
+              <h3 class="price-card__title">
+                メモリアルムービー制作<br class="pc-br" />（5分）
+              </h3>
+              <p class="price-card__amount">¥30,000-<span>(税込)</span></p>
+              <div class="price-card__detail">
+                <p>
+                  ・写真約50枚前後<br />（目安：1分あたり約8枚）<br />・ヒアリング込み<br />・やさしいオリジナル編集<br />・デジタルフォトフレーム付き<br />・修正1回まで無料
+                </p>
+              </div>
+            </article>
+            <article class="price-card">
+              <h3 class="price-card__title">
+                動画延長<br class="pc-br" />（＋1分）
+              </h3>
+              <p class="price-card__amount">¥5,000-<span>(税込)</span></p>
+              <div class="price-card__detail">
+                <p>
+                  写真枚数の追加や、<br />エピソードをより丁寧に残したい方に<br />おすすめです。
+                </p>
+              </div>
+            </article>
+            <article class="price-card">
+              <h3 class="price-card__title">フォトフレーム</h3>
+              <p class="price-card__amount">無料</p>
+              <div class="price-card__detail">
+                <p>
+                  標準フレームは料金に含まれております。<br />・フレーム不要の場合：−¥3,000<br />・上位グレードへ変更：＋¥3,000〜<br />・装飾オプション（予定）：別途ご案内
+                </p>
+              </div>
+            </article>
+          </div>
         </div>
-        <p class="footer-message__copy">&copy; 2026 メモリアル動画館</p>
-      </div>
-    </section>
+      </section>
 
-  </main>
-</body>
+      <section class="cta">
+        <div class="cta__inner container">
+          <div class="cta__group">
+            <div class="cta__benefits cta__benefits--image">
+              <div class="cta__benefit cta__benefit--image">
+                <picture>
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="./reason/sp-cta__benefit1--green.png"
+                  />
+                  <img
+                    src="./reason/cta__benefit1--green.png"
+                    alt="特典1 LINE登録で10%割引"
+                    class="cta__benefit-image"
+                  />
+                </picture>
+              </div>
+              <div class="cta__benefit cta__benefit--image">
+                <picture>
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="./reason/sp-cta__benefit2--green.png"
+                  />
+                  <img
+                    src="./reason/cta__benefit2--green.png"
+                    alt="特典2 モニター 先着10名様50%割引"
+                    class="cta__benefit-image"
+                  />
+                </picture>
+              </div>
+            </div>
+            <p class="cta__note">\　簡単30秒　/</p>
+            <a
+              class="btn btn--primary"
+              href="https://lin.ee/zTErQW4"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span>LINE登録・お問い合わせはこちら</span>
+              <img class="btn__arrow" src="./cta/arrow-sparkle.png" alt="" />
+            </a>
+          </div>
+        </div>
+      </section>
 
+      <section class="footer-message">
+        <div class="footer-message__bg">
+          <img src="./footer-message/bg.png" alt="" />
+        </div>
+        <div class="footer-message__inner container">
+          <div class="footer-message__body">
+            <h2 class="footer-message__title">
+              想いは、時間とともに<br />静かに、深く、心に残る。
+            </h2>
+            <p class="footer-message__text">
+              思い出は、心の中だけでなく、<br />そっと目に見えるかたちにも残せます。
+            </p>
+            <p class="footer-message__text">
+              あなたの大切な時間が、<br />これからもあたたかく続いていきますように。
+            </p>
+            <p class="footer-message__text footer-message__emphasis">
+              デジタルフォトフレームで、<br />一生の思い出を残しませんか？
+            </p>
+          </div>
+          <p class="footer-message__copy">&copy; 2026 メモリアル動画館</p>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
